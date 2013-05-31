@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block meta %}
+    <meta charset="utf-8">
+    <title> {% block title %} {{title}} {% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="descripton" content="{% block meta_description %} {% endblock %}"/>
+    <meta name="author" content="{% block meta_author %}{% endblock %}"/>
+    <meta name="keywords" content="{% block meta_keywords %} {% endblock %}"/>
+
+    <meta property=”og:title” content=”{% block og_title %} {{title}} {% endblock %}”/>
+    <meta property=”og:description” content=”{% block og_description %} {% endblock %} “/>
+    <meta property=”og:site_name” content=” Website Powered by Kunjika”/>
+    <meta property=”og:type” content=”{% block og_type %}{% endblock %}”/>
+    <meta name=”twitter:card” content=”     ”>
+    <meta name=”twitter:title” content=”         ”>
+    <meta name=”twitter:description” content=”      ”>
+
+
+
+     {% endblock meta %}
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="../css/font-awesome-ie7.min.css">
+    <![endif]-->
+
+</head>
+<body data-sp>
+
+
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-1.9.0.min.js"></script>
+    
+</body>
+</html>
